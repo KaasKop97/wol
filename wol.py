@@ -1,6 +1,5 @@
 import socket
 import struct
-from create_window import CreateWindow
 
 
 class Wol:
@@ -12,7 +11,8 @@ class Wol:
         :param macaddress: string
         :return: macaddress
 
-        A 'magic packet' starts with 6 bytes of 255 (FF FF FF FF FF FF) and then the mac address 16 times.
+        A 'magic packet' starts with 6 bytes of 255 (FF FF FF FF FF FF) and
+        then the mac address 16 times.
         Magic packet is magical, since it can wake up computers on the network!
         Only used by the 'Wake On Lan(WOL)' protocol.
         """
